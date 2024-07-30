@@ -14,22 +14,26 @@
         <h1>Nos Poupe</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="./adicionar-produtos/index.html">Adicionar</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="hero">
-            <h2>Economize e Ajude o Meio Ambiente</h2>
-            <p>Compre Nos Poupe e reduza o desperdício.</p>
-        </section>
-        <section id="products">
-            <!-- Listagem de Produtos -->
-            <input type="text" id="search" placeholder="Buscar produto...">
-            <div id="product-list"></div>
-        </section>
+        <form id="add-product-form">
+            <label for="name">Nome do Produto:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="price">Preço:</label>
+            <input type="text" id="price" name="price" required>
+            
+            <label for="expiryDate">Data de Validade:</label>
+            <input type="date" id="expiryDate" name="expiryDate" required>
+            
+            <button type="submit">Adicionar Produto</button>
+        </form>
+        <p id="status-message"></p>
     </main>
     <footer>
         <p>&copy; 2024 Nos Poupe</p>
